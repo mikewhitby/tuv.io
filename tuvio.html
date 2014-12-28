@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>tuv.io</title>
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Patua+One);
+
+        /* SMALL SCREENS */
+
+        /* General elements */
+        html, body {
+            height: 100%;
+        }
+        body {
+            background-color: #F4F4F4;
+            box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.15);
+            margin: 0;
+            font: 22px 'Patua One', cursive;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+        }
+        a {
+            color: #426F86;
+            text-decoration: none;
+        }
+
+        /* Specific elements */
+        .container {
+            width: 90%;
+            color: #3C3C3C;
+            text-align: center;
+            padding: 20px;
+        }
+            img.logo {
+                width: 90px; height:90px;
+            }
+            p.about-tuvio {
+                line-height: 39px;
+            }
+            p.contact {
+                text-align: center;
+                line-height: 0.95em;
+            }
+                p.contact i {
+                    font-size: 0.7em;
+                }
+                p.contact a {
+                    color: red;
+                }
+
+        /* BIG SCREENS */
+        @media all and (min-width: 400px) {
+            .container {
+                width: 45%; min-width: 400px; max-width: 600px;
+                padding: 0;
+                font-size: 1.22em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.svg" class="logo" alt="Tuvio">
+        <p class="about-tuvio">Tuvio is run by <a href="http://mikewhitby.co.uk">Mike Whitby</a>. He is primarily a specialist <a href="https://www.linkedin.com/in/mikewhitby">Magento contractor</a>, but also works on other PHP projects.</p>
+        <p class="contact">
+            <a href="mailto:mike@tuv.io">Send me an e-mail</a><br>
+            <i>- or -</i><br>
+            <a href="https://www.linkedin.com/in/mikewhitby">Contact me on LinkedIn</a>
+        </p>
+    </div>
+</body>
+</html>
